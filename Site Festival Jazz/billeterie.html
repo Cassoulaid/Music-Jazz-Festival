@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4c5c914ef7.js" crossorigin="anonymous"></script>
+    <title>Music Jazz Festival</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="leftElement">
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <a href="billeterie.html" class="ticketsButton">Billeterie</a>
+            </div>
+            <a href="index.html">
+                <img src="Images/Logo-removebg-preview (1).png" alt="logo" class="headerLogo">
+            </a>
+            <div class="socialIconDiv">
+                <a href="https://www.facebook.com/?locale=fr_FR" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            	<a href="https://www.tiktok.com/fr/" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            	<a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></i></i></i></a>
+            </div>
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="index.html">Accueil</a>
+            <a href="artistes.html">Artistes</a>
+            <a href="billeterie.html">Billeterie</a>
+            <a href="informations.html">Informations</a>
+        </div>
+    </header>
+    <main>
+        <section class="info-festival">
+            <h2 class="titles-billeterie">Informations sur le Festival</h2>
+            <p class="texte-billeterie">Le Festival de Jazz se tiendra le <strong>26 et 27 Octobre 2024</strong> au théatre antique de Lille. Rejoignez-nous pour
+                trois jours de musique incroyable !</p>
+        </section>
+
+        <section class="ticket">
+            <h2 class="titles-billeterie">Choisissez votre billet</h2>
+
+            <div class="ticket-type sold-out">
+                <h3 class="titles-ticket-type">Pre-Early Bird - 15€</h3>
+                <p class="sold-out-text">Sold Out</p>
+            </div>
+
+            <div class="ticket-type">
+                <h3 class="titles-ticket-type">Early Bird - 20€</h3>
+                <form>
+                    <label><input type="radio" name="early-quantity" value="0" checked> 0</label>
+                    <label><input type="radio" name="early-quantity" value="1"> 1</label>
+                    <label><input type="radio" name="early-quantity" value="2"> 2</label>
+                    <label><input type="radio" name="early-quantity" value="3"> 3</label>
+                    <button>Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="ticket-type">
+                <h3 class="titles-ticket-type">Standard - 25€</h3>
+                <form>
+                    <label><input type="radio" name="standard-quantity" value="0" checked> 0</label>
+                    <label><input type="radio" name="standard-quantity" value="1"> 1</label>
+                    <label><input type="radio" name="standard-quantity" value="2"> 2</label>
+                    <label><input type="radio" name="standard-quantity" value="3"> 3</label>
+                    <button>Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="ticket-type">
+                <h3 class="titles-ticket-type">VIP - 50€</h3>
+                <form>
+                    <label><input type="radio" name="vip-quantity" value="0" checked> 0</label>
+                    <label><input type="radio" name="vip-quantity" value="1"> 1</label>
+                    <label><input type="radio" name="vip-quantity" value="2"> 2</label>
+                    <label><input type="radio" name="vip-quantity" value="3"> 3</label>
+                    <button>Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="ticket-type sold-out">
+                <h3 class="titles-ticket-type">VIP Premium - 70€</h3>
+                <p class="sold-out-text">Sold Out</p>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <h2 class="titles-billeterie">Panier</h2>
+            <p class="texte-billeterie">Prix total : <strong>0€</strong></p>
+            <button>Payer</button>
+        </section>
+    </main>
+    <footer>
+        <p class="footerText">Nos partenaires</p>
+        <ul>
+            <li><a href="#">
+                    <img src="Images/logo lvdn.png" class="imagesLogo">
+                </a></li>
+            <li><a href="#">
+                    <img src="Images/Ilévia_logo_2019.svg.png" class="imagesLogo">
+                </a></li>
+            <li><a href="#">
+                    <img src="Images/REGION-HDF.png" class="imagesLogo">
+                </a></li>
+            <li><a href="#">
+                    <img src="Images/Logo_Brut.png" class="imagesLogo">
+                </a></li>
+            <li><a href="#"></a>
+                <img src="Images/France.tv_-_logo_2022.svg.png" class="imagesLogo">
+                </a>
+            </li>
+            <li><a href="#"></a>
+                <img src="Images/logo nord.png" class="imagesLogo">
+                </a>
+            </li>
+        </ul>
+        <nav class="footer">
+            <p class="footerText">Music Jazz Festival  © 2022 - Tous droits réservés</p>
+        </nav>
+    </footer>
+    <script src="site.js"></script>
+</body>
+
+</html>
